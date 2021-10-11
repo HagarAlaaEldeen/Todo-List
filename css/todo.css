@@ -1,0 +1,116 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Indie Flower", cursive;
+}
+body {
+  background-image: url(../images/music.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+header {
+  min-height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hTitle h1 {
+  color: sandybrown;
+  font-size: 24px;
+}
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  border: none;
+  padding: 3px;
+  font-size: 16px;
+  background: snow;
+}
+.btnAdd {
+  background-color: snow;
+  color: sandybrown;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnAdd:hover {
+  background-color: sandybrown;
+  color: snow;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: sandybrown;
+  width: 100px;
+  padding: 7px;
+}
+
+.filter {
+  margin: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter::after {
+  content: "\2B9B";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: sandybrown;
+  padding: 5px;
+  pointer-events: none;
+}
+.todoListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  min-width: 33%;
+}
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+.checked,
+.delete {
+  border: none;
+  color: snow;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 0.75rem;
+}
+.fa {
+  pointer-events: none;
+}
+.checked {
+  background-color: mediumspringgreen;
+}
+.delete {
+  background-color: tomato;
+}
+
+.todoTask {
+  padding: 0 5px;
+  flex: 1;
+}
+.done {
+  text-decoration: line-through;
+}
